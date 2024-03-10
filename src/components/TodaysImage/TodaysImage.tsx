@@ -6,9 +6,7 @@ import {PostImage} from '../../types';
 const TodaysImage: FC<PostImage> = ({date, title, url}) => {
   return (
     <View style={styles.container}>
-      <View style={styles.imageContainer}>
-        <Image source={{uri: url}} style={styles.image} />
-      </View>
+      <Image source={{uri: url}} style={styles.image} />
       <Text style={styles.title}>{title}</Text>
       <Text style={styles.date}>{date}</Text>
       <View style={styles.buttonContainer}>
@@ -24,10 +22,7 @@ const styles = StyleSheet.create({
     marginVertical: 30,
     marginHorizontal: 24,
     borderRadius: 32,
-    padding: 10,
-  },
-  imageContainer: {
-    padding: 10,
+    padding: 20,
   },
   image: {
     width: '100%',
