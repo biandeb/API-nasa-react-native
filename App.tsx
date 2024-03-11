@@ -1,16 +1,16 @@
 import React from 'react';
 import {Platform, SafeAreaView, StatusBar, StyleSheet} from 'react-native';
 
-import Home from './src/views/Home';
+import Routes from './src/routes';
 
-function App(): React.JSX.Element {
+function App(): JSX.Element {
   return (
     <>
       {Platform.OS === 'android' && (
         <StatusBar backgroundColor="#FFFFFF" barStyle="dark-content" />
       )}
       <SafeAreaView style={styles.container}>
-        <Home />
+        <Routes />
       </SafeAreaView>
     </>
   );
